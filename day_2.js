@@ -21,6 +21,8 @@ function isAnagram(Str1, Str2) {
   console.log(Counter);
 
   for (let items of Str2) {
+    console.log(items);
+    console.log(Counter[items]);
     if (!Counter[items]) {
       console.log(items);
       return false;
@@ -29,5 +31,5 @@ function isAnagram(Str1, Str2) {
   }
   return true;
 }
-const result = isAnagram("hello", "lloello");
+const result = isAnagram("hello", "hello");
 result;
